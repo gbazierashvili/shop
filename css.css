@@ -1,67 +1,158 @@
 *{
-    box-sizing: border-box;
     text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-header{
+html,body{
+    margin: 0;
+    background-image:url(background.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height:100%;
+    width:100%;
+    font-size: 100%
+  }
+
+
+header{  
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    background-color: black;
-    padding: 15px;
+    background-color: rgba(255,105,180,255);
+    align-items: center;
+    padding:1.3% 6% ;
+    width: 100%;
+    background-color:rgba(255,105,180,255)	;
 }
 .logo{
-    font-family: arial;
-    font-size: 29px;
-    font-weight: 900;
-    color: aliceblue;
-    transition: 0.3s ease;
-    padding: 18px 4%;
-}   
-.logo:hover{
-    color:red;
-    text-shadow: 0 0 6px red,
-    0 0 6px red;
-    transform: scale(1.1);
+color: white;
+font-family: arial;
+transition: 0.4s ease;
+font-size: 2em;
+font-weight: 900;
 }
-.span1{
-    color: red;
-
+.logo:hover{
+    color:#FF1493;
+    text-shadow: 0 0 12px #FF1493,
+    0 0 12px #FF1493;
+    transform: scale(1.2);
+}
+span{
+    color:#FF1493;
 }
 nav{
     display: flex;
-    width: 50%;
-    justify-content: space-between;
-    font-size: 24px;
-    font-weight: 450;
-    font-family: arial;
-    padding-right: 170px;
+    background-color: rgba(255,105,180,255);
+    align-items: center;
+    width: 100%;
+    justify-content:right;
 }
+.contact-radius{
+    display: flex;
+    border: 2px solid #FF1493;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 2%;
+    border-radius: 10px;
+}
+
 nav a{
-    color: white;
-    transition: 0.5s;
+    color: #ffffff;
+    font-family: arial;
+    transition: 0.3s ease;
+    font-weight: 500;
+    font-size: 1.2em;
+    align-items: center;
+    padding: 0.5%;
 }
 nav a:hover{
-    color: red;
-    text-shadow: 0 0 8px red,
-    0 0 8px red;
-    border-bottom: 5px solid red;
-    transform: scale(1.05);
-}
-.contact{
-    color: white;
-    font-family: arial;
-    font-size: 35px;
-    align-items: center;
-    transition: 0.5s ease;
-    font-weight: 900;
-    border: 4px solid red;
-    border-radius: 25px;
-    margin-right: 150px;
-}
-.contact:hover{
-    color: red;
-    text-shadow: 0 0 8px red,
-    0 0 8px red;
-    background-color: white;
     transform: scale(1.1);
+}
+.main-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:5% 22%;
+    gap: 17%;
+    
+}
+@media (max-width: 768px){
+    .main-div{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        
+    }
+}
+
+.poto,.poto1{
+    border-radius: 15px;
+    box-shadow: 0 0 70px#FF1493,
+    0 0 70px#FF1493;
+    transition: 0.5s ease;
+    height: 77%;
+    width: 100%;
+}
+.poto:hover,
+.poto1:hover{
+    box-shadow: 0 0 500px#FF1493,
+    0 0 500px#FF1493;
+}
+
+
+.container {
+    position: relative;
+    max-width: 800px;
+    width:100%;
+    height:auto;
+    margin: 0 auto;
+  }
+
+.container h1{
+    position: absolute;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.2);
+    color: #f1f1f1;
+    width: 100%;
+    padding:20px;
+    font-size: 1em;
+    font-weight: 500;
+    opacity: 0;
+    transition: 0.3s ease;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 13px;
+}
+.container:hover h1{
+    opacity:1;
+}
+.container1 {
+    width:100%;
+    height:auto;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+.container1 h1{
+    position: absolute;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.2);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    font-size: 1em;
+    font-weight: 500;
+    opacity: 0;
+    transition: 0.3s ease;
+    bottom: 0;
+    display: flex;
+    border-radius: 13px;
+    justify-content: center;
+}
+.container1:hover h1{
+    opacity:1;
 }
